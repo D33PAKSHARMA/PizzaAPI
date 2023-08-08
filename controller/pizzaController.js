@@ -2,6 +2,9 @@ import pizzaschema from "../models/pizzaschema.js";
 import cloudinary from "../utils/cloudinary.js";
 
 const pizzas = {
+  async welcome(req, res) {
+    res.status(200).send("Welcome to Pizza App");
+  },
   async getpizza(req, res) {
     // res.send("this is pizza");
     await pizzaschema

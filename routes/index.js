@@ -10,6 +10,7 @@ router.post("/register", userController.registerUser);
 router.post("/login", userController.loginUser);
 
 // Pizza routes
+router.get("/welcome", pizzas.welcome);
 router.get("/getpizza", pizzas.getpizza); //get all data
 
 //upload pizza data
