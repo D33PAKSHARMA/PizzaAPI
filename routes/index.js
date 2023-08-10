@@ -6,7 +6,7 @@ import userController from "../controller/userController.js";
 
 //User Routes
 
-router.post("/register", userController.registerUser);
+router.post("/", userController.registerUser);
 router.post("/login", userController.loginUser);
 
 // Pizza routes
